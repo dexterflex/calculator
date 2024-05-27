@@ -4,11 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d19d8ed287.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>hello world</h1>
+    <div class="container">
+        <div class="calculator">
+            <h1>
+                <i class="fa-solid fa-calculator"></i>
+                <span>QuickCalc</span>
+
+            </h1>
+            <input type="text" readonly class="display"></input>
+            <div class="buttons">
+                <button onclick="allClear()">AC</button>
+                <button onclick="Clear()">C</button>
+                <button>&divide;</button>
+                <button>&times;</button>
+                <button onclick="add('9')">9</button>
+                <button onclick="add('8')">8</button>
+                <button onclick="add('7')">7</button>
+                <button>&minus;</button>
+                <button onclick="add('6')">6</button>
+                <button onclick="add('5')">5</button>
+                <button onclick="add('4')">4</button>
+                <button class="plus">&plus;</button>
+                <button onclick="add('3')">3</button>
+                <button onclick="add('2')">2</button>
+                <button onclick="add('1')">1</button>
+                <button onclick="add('0')">0</button>
+                <button onclick="add('00')">00</button>
+                <button onclick="add('.')">.</button>
+                <button>&equals;</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
